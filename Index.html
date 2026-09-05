@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Marketing — Votre croissance commence ici</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #080812;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      background: #0c0c18;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #8b5cf6;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 8%;
+      background: radial-gradient(circle at top, #251052, #080812 55%);
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 78px);
+      max-width: 900px;
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #a78bfa;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #b8b8c8;
+      font-size: 19px;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #8b5cf6;
+      color: white;
+      padding: 15px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #7c3aed;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 50px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #11111f;
+      border: 1px solid #25253a;
+      padding: 30px;
+      border-radius: 18px;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #8b5cf6;
+    }
+
+    .card .icon {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #aaaabd;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .stat {
+      background: #11111f;
+      padding: 30px;
+      border-radius: 16px;
+    }
+
+    .stat h2 {
+      color: #a78bfa;
+      font-size: 40px;
+    }
+
+    .contact {
+      text-align: center;
+      background: linear-gradient(135deg, #17112d, #0d0d18);
+      border-radius: 25px;
+      margin: 30px 8%;
+      padding: 70px 20px;
+    }
+
+    .contact p {
+      color: #bbb;
+      margin: 15px auto 30px;
+      max-width: 600px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      border-top: 1px solid #20202e;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      section {
+        padding: 60px 5%;
+      }
+
+      .hero {
+        padding: 50px 5%;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Nova<span>Marketing</span></div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#results">Résultats</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Faisons grandir votre <span>marque.</span></h1>
+
+    <p>
+      Nous créons des stratégies marketing modernes pour attirer
+      plus de clients, développer votre audience et accélérer votre croissance.
+    </p>
+
+    <a href="#contact" class="btn">Démarrer un projet 🚀</a>
+  </section>
+
+  <section id="services">
+    <h2 class="title">Nos services</h2>
+
+    <div class="services">
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Réseaux sociaux</h3>
+        <p>
+          Développez votre présence sur Instagram, TikTok et les autres plateformes.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Publicité digitale</h3>
+        <p>
+          Des campagnes pensées pour toucher les bonnes personnes au bon moment.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Création de contenu</h3>
+        <p>
+          Des visuels et contenus modernes qui donnent envie de découvrir votre marque.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📈</div>
+        <h3>Stratégie marketing</h3>
+        <p>
+          Une stratégie claire pour transformer votre audience en clients.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="results">
+    <h2 class="title">Notre impact</h2>
+
+    <div class="stats">
+      <div class="stat">
+        <h2>+120</h2>
+        <p>Projets réalisés</p>
+      </div>
+
+      <div class="stat">
+        <h2>+80%</h2>
+        <p>Engagement moyen</p>
+      </div>
+
+      <div class="stat">
+        <h2>24/7</h2>
+        <p>Créativité</p>
+      </div>
+
+      <div class="stat">
+        <h2>100%</h2>
+        <p>Passion</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact" id="contact">
+    <h2 class="title">Prêt à passer au niveau supérieur ?</h2>
+
+    <p>
+      Parlons de votre projet et construisons ensemble une stratégie
+      marketing qui fait la différence.
+    </p>
+
+    <a class="btn" href="mailto:contact@novamarketing.com">
+      Nous contacter ✉️
+    </a>
+  </div>
+
+  <footer>
+    © 2026 Nova Marketing — Tous droits réservés.
+  </footer>
+
+</body>
+</html>
